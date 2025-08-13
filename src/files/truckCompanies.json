@@ -1,0 +1,44 @@
+
+{
+    "names":[
+        "Krone",
+        "Schmitz Cargobull",
+        "Kögel",
+        "Lamberet",
+        "Chereau",
+        "Andere"
+    ],
+    "Krone":[
+        "Kühlauflieger",
+        "Trockenfrachtkoffer",
+        "Sonderbau",
+        "Andere"
+    ],
+    "Kögel":[
+        "Kühlauflieger",
+        "Trockenfrachtkoffer",
+        "Sonderbau",
+        "Andere"
+    ],
+    "Lamberet":[
+        "Kühlauflieger",
+        "Trockenfrachtkoffer",
+        "Sonderbau",
+        "Andere"
+       
+    ],
+    "Schmitz Cargobull":[
+        "Kühlauflieger",
+        "Trockenfrachtkoffer",
+        "Sonderbau",
+        "Andere"   
+    ],
+    "Chereau":[
+        "Kühlauflieger",
+        "Trockenfrachtkoffer",
+        "Sonderbau",
+        "Andere"   
+    ]
+
+
+    }

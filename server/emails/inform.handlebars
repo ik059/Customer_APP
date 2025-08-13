@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booked Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/770bfd2114.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 4%;
+            width: 10%;
+        }
+
+        #emailBody {
+            margin: auto;
+            width: 70%;
+            text-align: center;
+            background-color: #97bf0d;
+            color: white;
+            font-family: 'Oswald' !important ;
+        }
+
+        h1 {
+            font-size: xx-large;
+            font-weight: 1500;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            text-transform: uppercase;
+        }
+
+        h3,
+        h5,
+        p {
+            font-size: large;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+        strong{
+            text-transform: uppercase;
+        }
+          #linkButton {
+            margin:auto;
+            width: 20%;
+            background-color: #a6a6a5;
+            color: whitesmoke;
+            height: 45px;
+            border-radius: 12px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        /* Responsive styling for different screen sizes */
+
+        /* Mobile screens */
+        @media (max-width: 600px) {
+            #emailBody {
+                width: 100%;
+                height: 100%;
+            }
+            img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 18%;
+            width: 20%;
+        }
+
+            h1 {
+                font-size: x-large;
+            }
+
+            h3,
+            h5,
+            p {
+                font-size: large;
+            }
+
+            #linkButton {
+                width: 80%;
+            }
+        }
+
+        /* Tablet screens */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            #emailBody {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: x-large;
+            }
+
+            h3,
+            h5,
+            p {
+                font-size: large;
+            }
+
+            #linkButton {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="emailBody">
+        <br/>
+        <br/>
+        <br/>
+        <h1><u>neuen Termin gebucht!</u></h1>
+        <br/>
+        <h3>Hallo Patrick/Felix,</h3>
+        <br/>
+        <h5>
+           An appointment has been booked by {{lastName}}. Please find the details below:
+        </h5>
+        <br/>
+        <strong>Program:</strong> {{program}}
+        <br/>
+        <h5>
+              <strong>{{organization}}</strong>
+        </h5>
+        <br/>
+        <p>Email:{{email}}</p>
+        <br/>
+        <h3>
+           <strong> Termindetails </strong>
+        </h3>
+        <br/>
+        <br/>
+        <p>
+           <strong>Zeit:</strong> {{time}}
+           <br/>
+           <strong>Datum:</strong> {{date}}
+           <br/>
+            <br/>
+           <br/>
+           <strong>Maschinenadresse:</strong> <br/>
+           {{street}} {{streetNumber}}, {{city}} {{postCode}}
+        </p>
+        <br/>
+           
+        <br/>
+      
+        <div id="logo">
+            <img  src="-"/>
+        </div>
+        <br/>
+        <br/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional npm cache
+.npm
+.pnpm-store
+yarn-error.log
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Vue.js build output
+/dist
+/build
+/out
+
+# Vue.js local configuration
+*.local
+*.cache
+*.tmp
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# JetBrains IDEs
+.idea/
+
+# Optional lock files for pnpm
+pnpm-lock.yaml
+
+# Debug directories
+/.turbo
+/.next
+/.nuxt
+
+# ESLint cache
+.eslintcache
+
+# Babel cache
+.babel.json
+.cache/
+
+# Coverage folder
+coverage/
+
+# Storybook build outputs
+out-storybook/
+
+# Misc
+*.swp
+*.swo

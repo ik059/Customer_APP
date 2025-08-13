@@ -1,0 +1,182 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booked Appointment Reminder!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/770bfd2114.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 4%;
+            width: 10%;
+        }
+
+        #emailBody {
+            margin: auto;
+            width: 70%;
+            text-align: center;
+            background-color: #97bf0d;
+            color: white;
+            font-family: 'Oswald' !important ;
+        }
+
+        h1 {
+            font-size: xx-large;
+            font-weight: 1500;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            text-transform: uppercase;
+        }
+
+        h3,
+        h5,
+        p {
+            font-size: large;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+        strong{
+            text-transform: uppercase;
+        }
+        #linkButton {
+            margin:auto;
+            width: 20%;
+            background-color: #585657;
+            color: whitesmoke;
+            height: 45px;
+            border-radius: 12px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #paddingDiv{
+            padding: 20px;
+        }
+        #lessWeight{
+            font-weight: 100;
+        }
+        /* Responsive styling for different screen sizes */
+
+        /* Mobile screens */
+        @media (max-width: 600px) {
+            #emailBody {
+                width: 100%;
+                height: 100%;
+            }
+            img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 4%;
+            width: 20%;
+        }
+
+            h1 {
+                font-size: x-large;
+            }
+
+            h3
+             {
+                font-size: large;
+            }
+
+            #linkButton {
+                width: 80%;
+            }
+            p,h5{
+                font-size: medium;
+            }
+
+        }
+
+        /* Tablet screens */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            #emailBody {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: x-large;
+            }
+            img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 4%;
+            width: 20%;
+        }
+            h3,
+            h5,
+            p {
+                font-size: large;
+            }
+
+            #linkButton {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="emailBody">
+        <div id="paddingDiv">
+        <br/>
+        <br/>
+       <br/>
+        <h1><u> Terminerinnerung!</u></h1>
+        <br/>
+        <h5>
+           
+        </h5>
+        <br/>
+        <p>
+           Zeit: 11.11
+           <br/>
+           Datum: 11.11.2021
+           <br/>
+           <br/>
+           <br/>
+           Maschinenadresse: 
+           <br/>
+           Rietberger Str. 127, 33129 Delbrück
+        </p>
+        <br/>
+
+        <h5>
+            DU KANNST DOCH NICHT RECHTZEITIG KOMMEN?
+        </h5>
+        <br/>
+        <button id="linkButton">
+            <a  href="http://localhost:8080/#/deleteappoitment?token={{token}}&t={{time}}&zeit={{date}}&shift={{shift}}"><h3>STORNIEREN</h3></a>
+        </button>
+
+           
+            <br/>
+            <br/>
+            
+            <div id="logo">
+                <img  src="-"/>
+            </div>
+            <br/>
+            <br/>
+            
+        </div>
+    </div>
+</body>
+</html>

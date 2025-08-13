@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERTIFIKAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            font-family: "Oswald", sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 50px;
+            background-color: white;
+        }
+        #header {
+            margin-bottom: 15px;
+        }
+        #header > div {
+            display: inline-block;
+          
+            vertical-align: top;
+        }
+        #certificateHeadingtext {
+            color: #97bf0d;
+            text-decoration: underline;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+        }
+        #qrCodeContainer, #sticker {
+            text-align: center;
+        }
+        #qrCodeContainer img, #sticker img {
+            height: 50px !important; 
+            width: auto;
+        }
+        #qrCodeContainer {
+          margin-right: 50px;
+          margin-left: 30px;
+        }
+        #qrCodeContainer p {
+            font-size: 6px;
+            margin: 0;
+        }
+        #sticker{
+          float: right;
+        }
+        #sticker img {
+            height: 100px !important;
+            width: auto;
+            margin-right: -20px;
+            margin-top:-30px;
+        }
+        #boldText {
+        font-weight: 400;
+        font-size: 10px;
+        max-width: 80%;
+        margin: 0;
+      }
+      
+      #normalGreenText {
+        color: #97bf0d;
+        font-size: 15px;
+      }
+      
+      #name {
+        font-size: 15px;
+        font-weight: bold;
+        color: #97bf0d;
+      }
+      
+      #rowField {
+        width: 100%;
+        white-space: nowrap;
+      }
+      
+      #rowField > div {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 32%;
+      }
+      
+      #signatureUnderLine {
+        width: 150px;
+        border-bottom: 1px solid black;
+      }
+      #rowField1 {
+        width: 100%;
+        white-space: nowrap;
+      }
+      
+      #rowField1 > div {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 22%;
+      }
+      p {
+        margin: 0;
+      }
+      
+      #logo {
+        width: 35%;
+        margin: auto;
+        aspect-ratio: 3/0.9;
+      }
+      
+      #certificateSticker {
+        width: 300px;
+        max-width: 200px;
+        aspect-ratio: 3/1;
+        margin-top: -30px;
+      }
+
+      .details{
+        line-height: 1.2;
+      }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="certificateHeading">
+            <h1 id="certificateHeadingtext">REINIGUNGSNACHWEIS</h1>
+        </div>
+        <div id="qrCodeContainer">
+            <img src="{{link}}" alt="QR Code">
+            <p>ID: {{certificateId}}</p>
+        </div>
+        <div id="sticker">
+            <img  src="https://container-hygiene.de/webapps/customerapp/Screenshot-2023-11-13-at-15-57-43.png" alt="Screenshot-2023-11-13-at-15-57-43" border="0">
+        </div>
+    </div>
+    <div>
+        <p id="boldText">Folgendes Fahrzeug der Firma:</p>
+        <p id="name">{{name}}</p>
+        <p id="normalGreenText">{{licenseNumber}}</p>
+      </div>
+      <div style="margin-top: 15px">
+        <p id="boldText">
+          wurde auf Grund des Grads der Verschmutzung und der Ladung das
+          Reinigungs-und Desinfektionsprogramm:
+        </p>
+        <p id="name">{{programName}}</p>
+      </div>
+  
+      <div style="margin-top: 15px">
+        <p id="boldText">nach folgenden Normen und Richtlinien gereinigt:</p>
+        <p id="name">
+          Verfahren nach DIN 10516 und EN 13486<br/> Gutachten nach DIN EN 1276, 1650, 14476
+        </p>
+      </div>
+      <div style="margin-top: 15px">
+        <p id="boldText" class="details">
+            Als Reinigungs- und Desinfektionsmittel wurde Lerades ® CIP 600 nach Angaben des Herstellers STOCKMEIER Chemie GmbH & Co. KG angewendet. Diese Reinigung entspricht einer Zwischenreinigung klein nach SOP „Reinigungsanweisung für Innenreinigung von Kühlkofferaufbauten im Lebensmitteltransport“ vom Bundesverband Güterkraftverkehr Logistik und Entsorgung e. Vu und TRANSFRIGOROUTE DEUTSCHLAND e. V.
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+  
+      <div id="rowField1">
+        <div>
+          <p id="boldText">Datum: {{createdDate}}, {{createdTime}} Uhr</p>
+          <p id="boldText">Maschine: {{machineName}}, {{machineAddress}}</p>
+        </div>
+        <div>
+          <p id="boldText" style="margin: 0 !important">Load 1</p>
+          <p id="boldText" style="margin: 0 !important">Load 2</p>
+        </div>
+        <div>
+          <p id="boldText" style="margin: 0 !important">Load ID</p>
+          <p id="boldText" style="margin: 0 !important">Load ID</p>
+        </div>
+      </div>
+  
+      <br />
+      <br />
+      <br />
+      <div id="rowField">
+        <div style="margin-top: 5px; margin-right: 18% !important">
+          <img
+          style="width: 180px;aspect-ratio:3/0.9; margin-right: 18% !important; margin-top:-35px"
+          src="-"
+        />
+          <div id="signatureUnderLine"></div>
+          <p id="boldText" style="margin: 0 !important">
+            -<br/>
+            -</p>
+        </div>
+        <div>
+          <img
+            id="certificateSticker"
+            src="https://container-hygiene.de/webapps/certificate/basic"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+    
+      <div style="text-align:center !important;">
+        <p style="text-decoration:underline;text-align:center !important; font-size: xx-small;">Die Echtheit dieses Zertifikats können Sie auf {{process.env.VUE_APP_HOST}}/validate überprüfen
+          ID: {{certificateId2}}
+          </p>
+      </div>
+      <div
+      style="margin: auto !important; align-items: center; text-align: center"
+    >
+      <img
+        id="logo"
+        src="-"
+        style="margin-top:25px;"
+      />
+    </div>
+    </div>
+</body>
+</html>
