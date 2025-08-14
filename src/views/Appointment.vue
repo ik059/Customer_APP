@@ -226,7 +226,7 @@ export default {
             selectedTime:'',
             machineShowing: false,
             machineLocation:'',
-            apiKey:"AIzaSyCy-407Yrt-tBtL_bVZZtpHJVJFnnQZuRY",
+            apiKey:process.evn.MAP_API,
             currentPosition:{},
             mobileTrue: false,
             date: '',
